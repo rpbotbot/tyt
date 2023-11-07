@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+
 import rospy
 from movel_seirios_msgs.srv import StringTrigger, StringTriggerResponse # like setbool
 from std_msgs.msg import Bool, UInt8, String
