@@ -11,6 +11,11 @@ from customOutcity2 import PyOutcity2
 from customOutcity3 import PyOutcity3
 from customEmptyIncity import PyEmptyIncity
 from customEmptyOutcity import PyEmptyOutcity
+from customConvDorong import PyConvDorong
+from customConvTarik import PyConvTarik
+from customLifter0 import PyLifter0
+from customLifter1 import PyLifter1
+from customLifter2 import PyLifter2
 
 if __name__ == '__main__':
     
@@ -23,5 +28,10 @@ if __name__ == '__main__':
     py_outcity3 = PyOutcity3()
     py_emptyincity = PyEmptyIncity()
     py_emptyoutcity = PyEmptyOutcity()
+    py_convdorong = PyConvDorong()
+    py_convtarik = PyConvTarik()
+    py_lifter0 = PyLifter0()
+    py_lifter1 = PyLifter1()
+    py_lifter2 = PyLifter2()
 
     rospy.spin()

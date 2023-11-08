@@ -44,6 +44,11 @@ plugins:
   - {name: cekConveyorOutcity3, type: 86, class: 'external_process_handler::ExternalProcessHandler'}
   - {name: cekConveyorEmptyIncity, type: 87, class: 'external_process_handler::ExternalProcessHandler'}
   - {name: cekConveyorEmptyOutcity, type: 88, class: 'external_process_handler::ExternalProcessHandler'}
+  - {name: ConveyorDorong, type: 89, class: 'external_process_handler::ExternalProcessHandler'}
+  - {name: ConveyorTarik, type: 90, class: 'external_process_handler::ExternalProcessHandler'}
+  - {name: Lifter0, type: 91, class: 'external_process_handler::ExternalProcessHandler'}
+  - {name: Lifter1, type: 92, class: 'external_process_handler::ExternalProcessHandler'}
+  - {name: Lifter2, type: 93, class: 'external_process_handler::ExternalProcessHandler'}
 
 validation:
   loop_rate:
@@ -571,6 +576,81 @@ cekConveyorEmptyOutcity:
   service_start: "/external_process/trigger_detecting8" #required if service_req is true
   service_start_msg: "" #optional  if there is any particular msg needs to sent or else empty string 
   service_stop: "/external_process/stop_detecting8" #required if service_req is true
+  service_stop_msg: "" #optional  if there is any particular msg needs to sent or else empty string 
+  #launch_package: "yocs_velocity_smoother" #required if launch_req is true
+  #launch_file: "standalone.launch"  #required if launch_req is true
+  #launch_nodes: "/nodelet_manager /velocity_smoother" #required if launch_req is true
+  topic_cancel_req: true
+  topic_process_cancel: "external_process/cancel_publish"
+  
+ConveyorDorong:
+  watchdog_rate: 2.0
+  watchdog_timeout: 0
+  service_req: true
+  launch_req: false
+  service_start: "/external_process/trigger_detecting9" #required if service_req is true
+  service_start_msg: "" #optional  if there is any particular msg needs to sent or else empty string 
+  service_stop: "/external_process/stop_detecting9" #required if service_req is true
+  service_stop_msg: "" #optional  if there is any particular msg needs to sent or else empty string 
+  #launch_package: "yocs_velocity_smoother" #required if launch_req is true
+  #launch_file: "standalone.launch"  #required if launch_req is true
+  #launch_nodes: "/nodelet_manager /velocity_smoother" #required if launch_req is true
+  topic_cancel_req: true
+  topic_process_cancel: "external_process/cancel_publish"
+  
+ConveyorTarik:
+  watchdog_rate: 2.0
+  watchdog_timeout: 0
+  service_req: true
+  launch_req: false
+  service_start: "/external_process/trigger_detecting10" #required if service_req is true
+  service_start_msg: "" #optional  if there is any particular msg needs to sent or else empty string 
+  service_stop: "/external_process/stop_detecting10" #required if service_req is true
+  service_stop_msg: "" #optional  if there is any particular msg needs to sent or else empty string 
+  #launch_package: "yocs_velocity_smoother" #required if launch_req is true
+  #launch_file: "standalone.launch"  #required if launch_req is true
+  #launch_nodes: "/nodelet_manager /velocity_smoother" #required if launch_req is true
+  topic_cancel_req: true
+  topic_process_cancel: "external_process/cancel_publish"
+  
+Lifter0:
+  watchdog_rate: 2.0
+  watchdog_timeout: 0
+  service_req: true
+  launch_req: false
+  service_start: "/external_process/trigger_detecting11" #required if service_req is true
+  service_start_msg: "" #optional  if there is any particular msg needs to sent or else empty string 
+  service_stop: "/external_process/stop_detecting11" #required if service_req is true
+  service_stop_msg: "" #optional  if there is any particular msg needs to sent or else empty string 
+  #launch_package: "yocs_velocity_smoother" #required if launch_req is true
+  #launch_file: "standalone.launch"  #required if launch_req is true
+  #launch_nodes: "/nodelet_manager /velocity_smoother" #required if launch_req is true
+  topic_cancel_req: true
+  topic_process_cancel: "external_process/cancel_publish"
+  
+Lifter1:
+  watchdog_rate: 2.0
+  watchdog_timeout: 0
+  service_req: true
+  launch_req: false
+  service_start: "/external_process/trigger_detecting12" #required if service_req is true
+  service_start_msg: "" #optional  if there is any particular msg needs to sent or else empty string 
+  service_stop: "/external_process/stop_detecting12" #required if service_req is true
+  service_stop_msg: "" #optional  if there is any particular msg needs to sent or else empty string 
+  #launch_package: "yocs_velocity_smoother" #required if launch_req is true
+  #launch_file: "standalone.launch"  #required if launch_req is true
+  #launch_nodes: "/nodelet_manager /velocity_smoother" #required if launch_req is true
+  topic_cancel_req: true
+  topic_process_cancel: "external_process/cancel_publish"
+  
+Lifter2:
+  watchdog_rate: 2.0
+  watchdog_timeout: 0
+  service_req: true
+  launch_req: false
+  service_start: "/external_process/trigger_detecting13" #required if service_req is true
+  service_start_msg: "" #optional  if there is any particular msg needs to sent or else empty string 
+  service_stop: "/external_process/stop_detecting13" #required if service_req is true
   service_stop_msg: "" #optional  if there is any particular msg needs to sent or else empty string 
   #launch_package: "yocs_velocity_smoother" #required if launch_req is true
   #launch_file: "standalone.launch"  #required if launch_req is true
